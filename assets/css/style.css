@@ -14,7 +14,6 @@
 	--third-color: rgb(192, 166, 49);
 	--first-shadow-color: rgba(0, 0, 0, 0.1);
 	--text-color-five: #FFDFD6;
-
 }
 
 
@@ -103,7 +102,7 @@ nav {
 .nav-name {
 	font-size: 30px;
 	font-weight: 600;
-	color: var(--text-color-third);
+	color: black;
 }
 
 .nav-logo span {
@@ -111,7 +110,7 @@ nav {
 	top: -15px;
 	right: -20px;
 	font-size: 5em;
-	color: var(--text-color-second);
+	color: red;
 }
 
 .nav-menu,
@@ -168,7 +167,7 @@ nav {
 }
 
 .featured-text-card span {
-	background: var(--third-color);
+	background: black;
 	color: var(--color-white);
 	padding: 3px 8px;
 	font-size: 12px;
@@ -185,7 +184,7 @@ nav {
 
 .typedText {
 	text-transform: capitalize;
-	color: var(--text-color-third);
+	color: red;
 }
 
 .featured-text-info {
@@ -201,13 +200,13 @@ nav {
 }
 
 .featured-text-btn>.blue-btn {
-	background: var(--first-color);
+	background: red;
 	color: var(--color-white);
 	box-shadow: 1px 8px 10px 2px var(--text-color-five);
 }
 
 .featured-text-btn>.blue-btn:hover {
-	background: var(--first-color-hover);
+	background: #1E9FAB;
 	box-shadow: 1px 8px 10px 2px var(--text-color-five);
 }
 
@@ -236,33 +235,171 @@ nav {
 
 .featured-image {
 	display: flex;
-	justify-content: right;
-	align-content: center;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	width: 50%;
+}
+.featured-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	min-height: 80vh;
 	width: 50%;
 }
 
 .image img {
-	width: 380px;
-	height: 380px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 
 .image {
-	margin: auto 0;
+	margin: auto;
 	width: 380px;
 	height: 380px;
-	border-radius: 55% 45% 55% 45%;
+	border-radius: 40%;
 	overflow: hidden;
-	animation: imgFloat 7s ease-in-out infinite;
+	animation: imgFloat 6s ease-in-out infinite;
 }
 
 @keyframes imgFloat {
+	0%, 100% {
+		transform: translateY(0) rotate(0deg) scale(1);
+		border-radius: 40%;
+	}
+	25% {
+		transform: translateY(-15px) rotate(8deg) scale(1.03);
+		border-radius: 45% 35% 45% 35%;
+	}
 	50% {
-		transform: translateY(10px);
-		border-radius: 45% 55% 45% 55%;
+		transform: translateY(15px) rotate(-8deg) scale(1.08);
+		border-radius: 35% 45% 35% 45%;
+	}
+	75% {
+		transform: translateY(-15px) rotate(8deg) scale(1.03);
+		border-radius: 45% 35% 45% 35%;
 	}
 }
+
+@media (max-width: 540px) {
+	.image,
+	.image img {
+		width: 150px;
+		height: 150px;
+		animation: imgFloatResponsive 6s ease-in-out infinite;
+	}
+	
+	.image {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+	}
+}
+
+@keyframes imgFloatResponsive {
+	0%, 100% {
+		transform: translateY(0) rotate(0deg) scale(1);
+		border-radius: 50%;
+	}
+	25% {
+		transform: translateY(-10px) rotate(6deg) scale(1.03);
+		border-radius: 55%;
+	}
+	50% {
+		transform: translateY(10px) rotate(-6deg) scale(1.05);
+		border-radius: 45%;
+	}
+	75% {
+		transform: translateY(-10px) rotate(6deg) scale(1.03);
+		border-radius: 55%;
+	}
+}
+
 
 .scroll-btn {
 	position: absolute;
@@ -351,13 +488,13 @@ h3 {
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
-	background: var(--first-color);
+	background: lavender;
 	color: var(--color-white);
 	border-radius: 30px;
 }
 
 .about-btn button:hover {
-	background: red;
+	background: rgb(22, 239, 255);
 }
 
 
