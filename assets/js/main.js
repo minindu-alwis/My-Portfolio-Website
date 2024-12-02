@@ -113,3 +113,12 @@ window.addEventListener('scroll', function () {
 });
 
 window.addEventListener('scroll', scrollActive);   
+
+
+
+function btn(){
+  console.log("Alwis");
+
+  alert("Thanks For Come To My Portfolio 💕");
+
+}
